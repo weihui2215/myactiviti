@@ -16,36 +16,12 @@ import java.util.List;
  **/
 
 @Controller
-@RequestMapping(value = "/index")
+@RequestMapping(value = "/")
 public class IndexFreemarkerController {
 
-    @RequestMapping(value = "/login")
-    public ModelAndView index(ModelAndView modelAndView) {
-
-        String path = ClassUtils.getDefaultClassLoader().getResource("").getPath();
-
-        modelAndView.setViewName("index");
-
-        List<String> userList=new ArrayList<String>();
-        userList.add("admin");
-        userList.add("user1");
-        userList.add("user2");
-
-        modelAndView.addObject("ctx",path);
-        modelAndView.addObject("userList", userList);
-        return modelAndView;
-    }
-
-    @RequestMapping(value = "/login1")
-    public ModelAndView index1() {
-        ModelAndView modelAndView = new ModelAndView("/main/index");
-
-        List<String> userList=new ArrayList<String>();
-        userList.add("admin");
-        userList.add("user1");
-        userList.add("user2");
-
-        modelAndView.addObject("userList", userList);
+    @RequestMapping
+    public ModelAndView index() {
+        ModelAndView modelAndView = new ModelAndView("login");
         return modelAndView;
     }
 }

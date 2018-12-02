@@ -8,7 +8,7 @@ $(function() {
 	// 退出系统
 	$('#loginOut').click(function(){
 		if (confirm('系统提示，您确定要退出本次登录吗?')) {
-			location.href = ctx + '/login.jsp';
+			location.href = ctx + '/';
 		}
     });
 

@@ -33,8 +33,8 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-th-large icon-black"></i>请假（普通表单）<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" rel='chapter7/leave/apply'>请假申请</a></li>
-                            <li><a href="#" rel='chapter7/leave/task/list'>待办任务</a></li>
+                            <li><a href="#" rel="leave/apply">请假申请</a></li>
+                            <li><a href="#" rel="leave/task/list">代办任务</a></li>
                         </ul>
                     </li>
                     <li><a href="#" rel="chapter6/task/list"><i class="icon-th-list icon-black"></i>任务列表</a></li>
